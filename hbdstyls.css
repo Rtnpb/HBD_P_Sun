@@ -53,3 +53,23 @@ body {
 .Hbd{
     color: #ffffff;
 }
+#play-music {
+    position: fixed; /* ยึดปุ่มไว้ที่ตำแหน่งคงที่ */
+    bottom: 20px; /* ระยะห่างจากขอบล่าง */
+    left: 50%; /* จัดให้อยู่ตรงกลาง */
+    transform: translateX(-50%); /* ปรับให้ปุ่มอยู่ตรงกลางจอ */
+    background-color: #ff4081; /* สีพื้นหลังชมพูสดใส */
+    color: white; /* สีตัวอักษร */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    padding: 10px 20px; /* ขยายพื้นที่ปุ่ม */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 25px; /* ทำให้ขอบมน */
+    cursor: pointer; /* เปลี่ยนเป็นรูปมือเมื่อชี้ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูนูนขึ้น */
+    transition: all 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์เวลาโฮเวอร์ */
+}
+
+#play-music:hover {
+    background-color: #d81b60; /* เปลี่ยนสีตอนโฮเวอร์ */
+    transform: translateX(-50%) scale(1.1); /* ขยายปุ่มเล็กน้อย */
+}
