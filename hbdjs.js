@@ -80,16 +80,11 @@ document.getElementById('birthday-message').addEventListener('click', function()
     });
 });
 
-window.addEventListener('load', function() {
-    // เริ่มเพลงเมื่อโหลดหน้าเว็บ
-    const music = document.getElementById('background-music');
+document.getElementById("final-message").addEventListener("click", function() {
+    const music = document.getElementById("background-music");
+    music.currentTime = 0;
     music.play();
-});
-
-document.getElementById('final-message').addEventListener('click', function() {
-    // รีโหลดหน้าเว็บและเริ่มเพลงใหม่
-    const music = document.getElementById('background-music');
-    music.currentTime = 0;  // รีเซ็ตเพลงให้เริ่มต้นใหม่
-    music.play();  // เริ่มเพลงใหม่
-    location.reload();
+    setTimeout(() => {
+        location.reload();
+    }, 2000);
 });
