@@ -1,45 +1,3 @@
-// โหลด YouTube IFrame API
-var tag = document.createElement('script');
-tag.src = "https://www.youtube-nocookie.com/iframe_api"; // เปลี่ยนเป็น nocookie
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-var isYouTubeReady = false;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-player', {
-        height: '0',
-        width: '0',
-        videoId: 'llp7JjK3dLk',
-        playerVars: {
-            'autoplay': 0,  
-            'loop': 1,
-            'playlist': 'llp7JjK3dLk',
-            'controls': 0,
-            'showinfo': 0,
-            'modestbranding': 1,
-            'fs': 0,
-            'rel': 0,
-            'enablejsapi': 1
-        },
-        events: {
-            'onReady': function(event) {
-                event.target.setVolume(50);
-                isYouTubeReady = true; 
-            }
-        }
-    });
-}
-
-// ✅ ปุ่มเล่นเพลง
-document.getElementById('play-music').addEventListener('click', function() {
-    if (isYouTubeReady && player) {
-        player.playVideo();
-    } else {
-        console.warn("YouTube API ยังโหลดไม่เสร็จ");
-    }
-});
 
 document.getElementById('birthday-message').addEventListener('click', function() {
     document.getElementById('home-page').style.display = 'none';
@@ -112,11 +70,3 @@ function showFinalMessage() {
         });
     }, 1000);
 }
-
-// ✅ หยุดเพลงเมื่อรีโหลดกลับไปหน้าแรก
-document.getElementById('final-message').addEventListener('click', function() {
-    if (isYouTubeReady && player) {
-        player.stopVideo();
-    }
-    location.reload();
-});
