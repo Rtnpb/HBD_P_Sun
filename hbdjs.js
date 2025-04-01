@@ -58,7 +58,7 @@ function showFinalMessage() {
             if (currentMessageIndex === messages.length) {
                 clearInterval(messageInterval);
             }
-        }, 2000);
+        }, 5000);
 
         messages.forEach(function(message) {
             message.addEventListener('click', function() {
@@ -70,7 +70,3 @@ function showFinalMessage() {
         });
     }, 1000);
 }
-
-document.getElementById('final-message').addEventListener('click', function() {
-    location.reload();
-});
