@@ -1,4 +1,3 @@
-
 document.getElementById('birthday-message').addEventListener('click', function() {
     document.getElementById('home-page').style.display = 'none';
     document.getElementById('slideshow-page').style.display = 'block';
@@ -36,37 +35,27 @@ function showFinalMessage() {
 
         let currentMessageIndex = 0;
         const messages = document.querySelectorAll('#final-message h2, #final-message h3, #final-message p');
-
+        
         messages.forEach(msg => {
             msg.style.display = 'none';
-            msg.style.opacity = 0;
         });
 
         function showNextMessage() {
             if (currentMessageIndex < messages.length) {
-                const message = messages[currentMessageIndex];
-                message.style.display = 'block';
-                setTimeout(() => {
-                    message.style.opacity = 1;
-                }, 50);
+                if (currentMessageIndex > 0) {
+                    messages[currentMessageIndex - 1].style.display = 'none';
+                }
+                messages[currentMessageIndex].style.display = 'block';
                 currentMessageIndex++;
             }
         }
 
-        const messageInterval = setInterval(function() {
-            showNextMessage();
-            if (currentMessageIndex === messages.length) {
-                clearInterval(messageInterval);
-            }
-        }, 4000);
+        showNextMessage();
 
-        messages.forEach(function(message) {
-            message.addEventListener('click', function() {
-                message.style.opacity = 0;
-                setTimeout(() => {
-                    message.style.display = 'none';
-                }, 500);
-            });
+        document.getElementById('final-message').addEventListener('click', function() {
+            if (currentMessageIndex < messages.length) {
+                showNextMessage();
+            }
         });
     }, 1000);
 }
