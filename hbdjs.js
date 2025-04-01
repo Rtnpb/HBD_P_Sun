@@ -70,3 +70,7 @@ function showFinalMessage() {
         });
     }, 1000);
 }
+
+document.getElementById('final-message').addEventListener('click', function() {
+    location.reload();
+});
