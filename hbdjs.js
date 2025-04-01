@@ -58,7 +58,7 @@ function showFinalMessage() {
             if (currentMessageIndex === messages.length) {
                 clearInterval(messageInterval);
             }
-        }, 5000);
+        }, 4000);
 
         messages.forEach(function(message) {
             message.addEventListener('click', function() {
