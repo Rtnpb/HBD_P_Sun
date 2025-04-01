@@ -7,13 +7,13 @@ document.getElementById('birthday-message').addEventListener('click', function()
     
     let currentImageIndex = 0;
     const images = [
-        'pSun1.jpg', 'pSun2.jpg', '/images/pSun3.jpg', '/images/pSun4.jpg', '/images/pSun5.jpg', '/images/pSun6.jpg',
-        '/images/pSun7.jpg', '/images/pSun8.jpg', '/images/pSun9.jpg', '/images/pSun10.jpg', '/images/pSun11.jpg', '/images/pSun12.jpg', 
-        '/images/pSun14.jpg', '/images/pSun15.jpg', '/images/pSun26.jpg', '/images/pSun18.jpg', '/images/pSun20.jpg', '/images/pSun21.jpg', '/images/pSun22.jpg',
-        '/images/pSun23.jpg', '/images/pSun24.jpg', '/images/pSun25.jpg', '/images/pSun17.jpg', '/images/pSun39.jpg',
-        '/images/pSun27.jpg', '/images/pSun28.jpg', '/images/pSun29.jpg', '/images/pSun30.jpg', '/images/pSun40.jpg',
-        '/images/pSun31.jpg', '/images/pSun32.jpg', '/images/pSun33.jpg', '/images/pSun34.jpg',
-        '/images/pSun35.jpg', '/images/pSun36.jpg', '/images/pSun37.jpg', '/images/pSun38.jpg'
+        'pSun1.jpg', 'pSun2.jpg', 'pSun3.jpg', 'pSun4.jpg', 'pSun5.jpg', 'pSun6.jpg',
+        'pSun7.jpg', 'pSun8.jpg', 'pSun9.jpg', 'pSun10.jpg', 'pSun11.jpg', 'pSun12.jpg', 
+        'pSun14.jpg', 'pSun15.jpg', 'pSun26.jpg', 'pSun18.jpg', 'pSun20.jpg', 'pSun21.jpg', 'pSun22.jpg',
+        'pSun23.jpg', 'pSun24.jpg', 'pSun25.jpg', 'pSun17.jpg', 'pSun39.jpg',
+        'pSun27.jpg', 'pSun28.jpg', 'pSun29.jpg', 'pSun30.jpg', 'pSun40.jpg',
+        'pSun31.jpg', 'pSun32.jpg', 'pSun33.jpg', 'pSun34.jpg',
+        'pSun35.jpg', 'pSun36.jpg', 'pSun37.jpg', 'pSun38.jpg'
     ];
 
     // แสดงรูปแรก
