@@ -12,7 +12,10 @@ document.getElementById('birthday-message').addEventListener('click', function()
         'images/pSun24.jpg', 'images/pSun25.jpg', 'images/pSun17.jpg', 'images/pSun39.jpg',
         'images/pSun27.jpg', 'images/pSun28.jpg', 'images/pSun29.jpg', 'images/pSun30.jpg',
         'images/pSun40.jpg', 'images/pSun31.jpg', 'images/pSun32.jpg', 'images/pSun33.jpg',
-        'images/pSun34.jpg', 'images/pSun35.jpg', 'images/pSun36.jpg', 'images/pSun37.jpg', 'images/pSun38.jpg'
+        'images/pSun34.jpg', 'images/pSun35.jpg', 'images/pSun36.jpg', 'images/pSun37.jpg', 
+        'images/pSun38.jpg', 'images/pSun41.jpg', 'images/pSun42.jpg', 'images/pSun43.jpg', 
+        'images/pSun44.jpg', 'images/pSun45.jpg', 'images/pSun46.jpg', 'images/pSun47.jpg', 
+        'images/pSun48.jpg'
     ];
 
     document.getElementById('slideshow-image').src = images[currentImageIndex];
